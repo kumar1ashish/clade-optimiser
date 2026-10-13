@@ -6,9 +6,13 @@ paper.pdf: paper.tex references.bib make_assets.py $(wildcard ../bench/results/*
 preprint.pdf: preprint.tex paper.pdf
 	latexmk -pdf -interaction=nonstopmode -quiet preprint.tex
 
-# arXiv source bundle: the preprint with its bibliography already compiled
+# arXiv source bundle: one top-level file (the preprint), its compiled bibliography, styles, tables and figure
 arxiv: preprint.pdf
-	tar -czf arxiv.tar.gz preprint.tex paper.tex preprint.bbl acl.sty acl_natbib.bst references.bib generated figures/runs.pdf
+	rm -rf arxiv && mkdir -p arxiv/generated arxiv/figures
+	{ echo '\def\preprintmode{}'; cat paper.tex; } > arxiv/main.tex
+	cp preprint.bbl arxiv/main.bbl
+	cp acl.sty acl_natbib.bst arxiv/ && cp generated/*.tex arxiv/generated/ && cp figures/runs.pdf arxiv/figures/
+	tar -czf arxiv.tar.gz -C arxiv . && rm -rf arxiv
 
 clean:
 	latexmk -C paper.tex
