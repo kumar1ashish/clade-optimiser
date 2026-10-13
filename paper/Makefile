@@ -12,7 +12,7 @@ arxiv: preprint.pdf
 	{ echo '\def\preprintmode{}'; cat paper.tex; } > arxiv/main.tex
 	cp preprint.bbl arxiv/main.bbl
 	cp acl.sty acl_natbib.bst arxiv/ && cp generated/*.tex arxiv/generated/ && cp figures/runs.pdf arxiv/figures/
-	tar -czf arxiv.tar.gz -C arxiv . && rm -rf arxiv
+	COPYFILE_DISABLE=1 tar -czf arxiv.tar.gz -C arxiv . && rm -rf arxiv
 
 clean:
 	latexmk -C paper.tex
