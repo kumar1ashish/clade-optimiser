@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: maya.chen@example.com\nSubject: Changed my mind\n\nI ordered the kayak paddle (O1007) yesterday but I changed my mind. Can I get a refund?",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

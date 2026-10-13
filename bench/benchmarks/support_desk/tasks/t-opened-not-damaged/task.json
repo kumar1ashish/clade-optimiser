@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.garcia@example.com\nSubject: Refund\n\nI used the sunglasses from O2002 once and don't love them. Refund please.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "train"
+  }
+}

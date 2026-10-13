@@ -1,0 +1,361 @@
+{
+ "bench": "tau2-retail",
+ "method": "baseline",
+ "seed": 2,
+ "models": {
+  "agent": "groq:openai/gpt-oss-20b",
+  "optimizer": "groq:openai/gpt-oss-120b",
+  "user": "groq:openai/gpt-oss-120b"
+ },
+ "budget": 600,
+ "test_n": 4,
+ "params": {},
+ "started": 1791807309.388641,
+ "status": "done",
+ "learn_seconds": 0,
+ "rollouts": 0,
+ "infra_reruns": 0,
+ "optimizer_tokens": {},
+ "optimizer_usd": 0,
+ "agent_learn_usd": 0,
+ "bundle": {
+  "version": "b_74cb1a59dd90",
+  "prompt": "You are a customer service agent that helps the user according to the <policy> provided below.\nIn each turn you can either:\n- Send a message to the user.\n- Make a tool call.\nYou cannot do both at the same time.\n\nTry to be helpful and always follow the policy. Always make sure you generate valid JSON only.\n",
+  "playbook": [],
+  "tools": {},
+  "chars": 306
+ },
+ "test": {
+  "mean": 0.4875,
+  "n": 4,
+  "episodes": 160,
+  "per_task": {
+   "retail-100": 0.0,
+   "retail-101": 0.25,
+   "retail-102": 0.25,
+   "retail-108": 0.75,
+   "retail-111": 0.25,
+   "retail-12": 1.0,
+   "retail-17": 0.25,
+   "retail-18": 0.25,
+   "retail-26": 0.5,
+   "retail-27": 0.0,
+   "retail-32": 0.0,
+   "retail-33": 0.75,
+   "retail-36": 0.0,
+   "retail-38": 0.0,
+   "retail-39": 0.0,
+   "retail-40": 1.0,
+   "retail-42": 1.0,
+   "retail-45": 0.5,
+   "retail-49": 0.0,
+   "retail-5": 0.0,
+   "retail-51": 0.5,
+   "retail-53": 0.5,
+   "retail-55": 0.5,
+   "retail-56": 0.75,
+   "retail-60": 1.0,
+   "retail-61": 1.0,
+   "retail-62": 0.75,
+   "retail-64": 0.5,
+   "retail-65": 1.0,
+   "retail-68": 1.0,
+   "retail-70": 0.5,
+   "retail-71": 0.0,
+   "retail-74": 0.25,
+   "retail-77": 1.0,
+   "retail-79": 0.75,
+   "retail-86": 0.25,
+   "retail-9": 0.75,
+   "retail-90": 0.5,
+   "retail-94": 1.0,
+   "retail-97": 0.25
+  },
+  "runs": {
+   "retail-100": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-101": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-102": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-108": [
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "retail-111": [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-12": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-17": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "retail-18": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-26": [
+    0.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "retail-27": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-32": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-33": [
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "retail-36": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-38": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-39": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-40": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-42": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-45": [
+    1.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-49": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-5": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-51": [
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-53": [
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-55": [
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-56": [
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-60": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-61": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-62": [
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-64": [
+    1.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "retail-65": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-68": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-70": [
+    1.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-71": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-74": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "retail-77": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-79": [
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-86": [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-9": [
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-90": [
+    1.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-94": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-97": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "infra_failures_left": 0,
+  "infra_reruns": 16,
+  "agent_usd": 1.1217,
+  "subsets": {
+   "write": [
+    "retail-5",
+    "retail-9",
+    "retail-17",
+    "retail-18",
+    "retail-26",
+    "retail-27",
+    "retail-32",
+    "retail-33",
+    "retail-36",
+    "retail-38",
+    "retail-39",
+    "retail-40",
+    "retail-42",
+    "retail-45",
+    "retail-49",
+    "retail-51",
+    "retail-53",
+    "retail-55",
+    "retail-56",
+    "retail-60",
+    "retail-61",
+    "retail-64",
+    "retail-70",
+    "retail-71",
+    "retail-74",
+    "retail-77",
+    "retail-79",
+    "retail-86",
+    "retail-90",
+    "retail-94",
+    "retail-97",
+    "retail-100",
+    "retail-101",
+    "retail-102",
+    "retail-108",
+    "retail-111"
+   ]
+  }
+ },
+ "finished": 1791808976.2259881
+}

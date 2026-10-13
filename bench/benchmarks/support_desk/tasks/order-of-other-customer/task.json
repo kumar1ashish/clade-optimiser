@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.garcia@example.com\nSubject: Refund for my partner\n\nPlease refund the unopened compass in O1011, I'm handling it for Maya.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

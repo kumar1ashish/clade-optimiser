@@ -1,0 +1,23 @@
+{
+  "benchmarks": [
+    "tau2-airline"
+  ],
+  "methods": [
+    "clade-rewrite",
+    "clade-no-critic",
+    "clade-greedy",
+    "clade-no-gate"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "budget": 600,
+  "models": {
+    "agent": "groq:openai/gpt-oss-20b",
+    "optimizer": "groq:openai/gpt-oss-120b",
+    "user": "groq:openai/gpt-oss-120b"
+  },
+  "service_tier": "flex"
+}

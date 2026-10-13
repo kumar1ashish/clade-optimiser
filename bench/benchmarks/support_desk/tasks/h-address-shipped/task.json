@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.garcia@example.com\nSubject: Address\n\nPlease change the address for O3002 to 9 Cedar Ave, Boise.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": true,
+  "meta": {
+    "split": "held"
+  }
+}

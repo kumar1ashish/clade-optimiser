@@ -1,0 +1,29 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C100": {
+   "name": "Maya Chen",
+   "email": "maya.chen@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O1021": {
+   "customer_id": "C100",
+   "status": "shipped",
+   "delivered_date": null,
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Climbing chalk",
+     "price": 15.0,
+     "opened": false,
+     "damaged": false,
+     "final_sale": false,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C200": {
+   "name": "Leo Garcia",
+   "email": "leo.garcia@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O2006": {
+   "customer_id": "C200",
+   "status": "delivered",
+   "delivered_date": "2026-08-22",
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Enamel mug",
+     "price": 25.0,
+     "opened": false,
+     "damaged": false,
+     "final_sale": false,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

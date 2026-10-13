@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.garcia@example.com\nSubject: Return\n\nCan I return the unopened mug from O2006?",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "train"
+  }
+}

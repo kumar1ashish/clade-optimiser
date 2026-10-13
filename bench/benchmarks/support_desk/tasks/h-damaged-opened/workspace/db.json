@@ -1,0 +1,29 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C200": {
+   "name": "Leo Garcia",
+   "email": "leo.garcia@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O3003": {
+   "customer_id": "C200",
+   "status": "delivered",
+   "delivered_date": "2026-10-05",
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Tent stakes",
+     "price": 28.0,
+     "opened": true,
+     "damaged": true,
+     "final_sale": false,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

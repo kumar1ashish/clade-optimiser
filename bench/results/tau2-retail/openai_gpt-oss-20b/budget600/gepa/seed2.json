@@ -1,0 +1,367 @@
+{
+ "bench": "tau2-retail",
+ "method": "gepa",
+ "seed": 2,
+ "models": {
+  "agent": "groq:openai/gpt-oss-20b",
+  "optimizer": "groq:openai/gpt-oss-120b",
+  "user": "groq:openai/gpt-oss-120b"
+ },
+ "budget": 600,
+ "test_n": 4,
+ "params": {},
+ "started": 1791813258.555197,
+ "status": "done",
+ "learn_seconds": 9286,
+ "rollouts": 618,
+ "infra_reruns": 34,
+ "optimizer_tokens": {
+  "openai/gpt-oss-120b": {
+   "prompt_tokens": 165698,
+   "completion_tokens": 131840,
+   "calls": 51
+  }
+ },
+ "optimizer_usd": 0.104,
+ "agent_learn_usd": 5.5663,
+ "bundle": {
+  "version": "b_76007f0a53b2",
+  "prompt": "{\"type\":\"message\",\"content\":\"Hi! How can I help you today? To protect your account I need either your email address or your first name, last name, and ZIP code.\"}\n```\n*User replies with name & ZIP*  \n```json\n{\"type\":\"tool\",\"name\":\"find_user_id_by_name_zip\",\"arguments\":{\"first_name\":\"Yara\",\"last_name\":\"Silva\",\"zip\":\"77159\"}}\n```\n*Tool returns `user_id\":\"yara_silva_77159`*  \n```json\n{\"type\":\"tool\",\"name\":\"get_user_details\",\"arguments\":{\"user_id\":\"yara_silva_77159\"}}\n```\n```json\n{\"type\":\"message\",\"content\":\"Thanks, Yara! I\u2019ve located your account. If you have the order number, please share it. If not, I can look up your recent orders for you.\"}\n```\n*User provides order ID*  \n```json\n{\"type\":\"tool\",\"name\":\"get_order_details\",\"arguments\":{\"order_id\":\"#W3730488\"}}\n```\n```json\n{\"type\":\"message\",\"content\":\"I see order #W3730488 is still pending. Would you like to update its shipping address to the new one you provided? Please reply with \u201cyes\u201d to confirm.\"}\n```\n*User replies \u201cyes\u201d*  \n```json\n{\"type\":\"tool\",\"name\":\"modify_pending_order_address\",\"arguments\":{\"order_id\":\"#W3730488\",\"address1\":\"555 Highland Drive\",\"address2\":\"Suite 872\",\"city\":\"New York\",\"country\":\"USA\",\"state\":\"NY\"}}\n```\n```json\n{\"type\":\"message\",\"content\":\"Your shipping address has been updated to 555 Highland Drive, Suite 872, New York, NY, USA.\"}",
+  "playbook": [],
+  "tools": {},
+  "chars": 1325
+ },
+ "test": {
+  "mean": 0.5125,
+  "n": 4,
+  "episodes": 160,
+  "per_task": {
+   "retail-100": 0.5,
+   "retail-101": 0.0,
+   "retail-102": 0.25,
+   "retail-108": 0.5,
+   "retail-111": 0.0,
+   "retail-12": 1.0,
+   "retail-17": 0.75,
+   "retail-18": 0.5,
+   "retail-26": 0.5,
+   "retail-27": 0.0,
+   "retail-32": 0.0,
+   "retail-33": 0.75,
+   "retail-36": 0.0,
+   "retail-38": 0.0,
+   "retail-39": 0.25,
+   "retail-40": 1.0,
+   "retail-42": 0.75,
+   "retail-45": 0.25,
+   "retail-49": 0.0,
+   "retail-5": 0.25,
+   "retail-51": 0.5,
+   "retail-53": 1.0,
+   "retail-55": 1.0,
+   "retail-56": 0.25,
+   "retail-60": 1.0,
+   "retail-61": 1.0,
+   "retail-62": 1.0,
+   "retail-64": 0.5,
+   "retail-65": 1.0,
+   "retail-68": 1.0,
+   "retail-70": 0.5,
+   "retail-71": 0.25,
+   "retail-74": 0.0,
+   "retail-77": 1.0,
+   "retail-79": 0.5,
+   "retail-86": 0.25,
+   "retail-9": 0.75,
+   "retail-90": 0.75,
+   "retail-94": 1.0,
+   "retail-97": 0.0
+  },
+  "runs": {
+   "retail-100": [
+    1.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-101": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-102": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-108": [
+    1.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-111": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-12": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-17": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "retail-18": [
+    1.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "retail-26": [
+    1.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-27": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-32": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-33": [
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "retail-36": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-38": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-39": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-40": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-42": [
+    1.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "retail-45": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-49": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-5": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-51": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "retail-53": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-55": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-56": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-60": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-61": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-62": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-64": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "retail-65": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-68": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-70": [
+    0.0,
+    1.0,
+    1.0,
+    0.0
+   ],
+   "retail-71": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "retail-74": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retail-77": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-79": [
+    0.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "retail-86": [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "retail-9": [
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "retail-90": [
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "retail-94": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "retail-97": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "infra_failures_left": 0,
+  "infra_reruns": 2,
+  "agent_usd": 1.1883,
+  "subsets": {
+   "write": [
+    "retail-5",
+    "retail-9",
+    "retail-17",
+    "retail-18",
+    "retail-26",
+    "retail-27",
+    "retail-32",
+    "retail-33",
+    "retail-36",
+    "retail-38",
+    "retail-39",
+    "retail-40",
+    "retail-42",
+    "retail-45",
+    "retail-49",
+    "retail-51",
+    "retail-53",
+    "retail-55",
+    "retail-56",
+    "retail-60",
+    "retail-61",
+    "retail-64",
+    "retail-70",
+    "retail-71",
+    "retail-74",
+    "retail-77",
+    "retail-79",
+    "retail-86",
+    "retail-90",
+    "retail-94",
+    "retail-97",
+    "retail-100",
+    "retail-101",
+    "retail-102",
+    "retail-108",
+    "retail-111"
+   ]
+  }
+ },
+ "finished": 1791823091.342052
+}

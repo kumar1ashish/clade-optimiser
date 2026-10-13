@@ -1,0 +1,29 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C100": {
+   "name": "Maya Chen",
+   "email": "maya.chen@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O1005": {
+   "customer_id": "C100",
+   "status": "delivered",
+   "delivered_date": "2026-10-05",
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Clearance rain jacket",
+     "price": 70.0,
+     "opened": false,
+     "damaged": true,
+     "final_sale": true,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

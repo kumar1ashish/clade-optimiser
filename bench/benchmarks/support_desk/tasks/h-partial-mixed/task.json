@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.garcia@example.com\nSubject: Returns\n\nFrom O3001 please refund the stove (unopened) and the pot (I cooked with it).",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": true,
+  "meta": {
+    "split": "held"
+  }
+}

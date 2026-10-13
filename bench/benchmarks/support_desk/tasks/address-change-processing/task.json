@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: maya.chen@example.com\nSubject: New address\n\nI just moved! Please ship order O1008 to 48 Birch Lane, Seattle, WA 98101 instead.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

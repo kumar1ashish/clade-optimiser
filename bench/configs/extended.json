@@ -1,0 +1,23 @@
+{
+  "benchmarks": [
+    "tau2-airline",
+    "tau2-retail"
+  ],
+  "methods": [
+    "mipro-demos",
+    "simba",
+    "textgrad"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "budget": 600,
+  "models": {
+    "agent": "groq:openai/gpt-oss-20b",
+    "optimizer": "groq:openai/gpt-oss-120b",
+    "user": "groq:openai/gpt-oss-120b"
+  },
+  "service_tier": "flex"
+}

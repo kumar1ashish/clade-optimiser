@@ -1,0 +1,38 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C100": {
+   "name": "Maya Chen",
+   "email": "maya.chen@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O1013": {
+   "customer_id": "C100",
+   "status": "delivered",
+   "delivered_date": "2026-09-30",
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Merino socks",
+     "price": 55.0,
+     "opened": false,
+     "damaged": false,
+     "final_sale": false,
+     "refunded": false
+    },
+    {
+     "id": "I2",
+     "name": "Clearance cap",
+     "price": 25.0,
+     "opened": false,
+     "damaged": false,
+     "final_sale": true,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

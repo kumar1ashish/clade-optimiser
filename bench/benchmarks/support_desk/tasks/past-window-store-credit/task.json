@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: maya.chen@example.com\nSubject: Refund please\n\nI never used the camping stove from order O1002, can I get my money back?",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

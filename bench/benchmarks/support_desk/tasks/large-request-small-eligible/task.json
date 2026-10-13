@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: maya.chen@example.com\nSubject: Return\n\nPlease refund the backpack (unopened) and the boots (worn on one hike) from O1017.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

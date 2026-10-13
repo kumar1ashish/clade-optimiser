@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.g@example.net\nSubject: Refund\n\nThis is Leo. Please refund the unopened socks in O2005.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "train"
+  }
+}

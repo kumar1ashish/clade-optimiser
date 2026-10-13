@@ -1,0 +1,204 @@
+{
+ "bench": "tau2-airline",
+ "method": "clade-rewrite",
+ "seed": 1,
+ "models": {
+  "agent": "groq:openai/gpt-oss-20b",
+  "optimizer": "groq:openai/gpt-oss-120b",
+  "user": "groq:openai/gpt-oss-120b"
+ },
+ "budget": 600,
+ "test_n": 4,
+ "params": {},
+ "started": 1791798502.0560699,
+ "status": "done",
+ "learn_seconds": 6054,
+ "rollouts": 540,
+ "infra_reruns": 108,
+ "optimizer_tokens": {
+  "openai/gpt-oss-120b": {
+   "prompt_tokens": 88697,
+   "completion_tokens": 26918,
+   "calls": 56
+  }
+ },
+ "optimizer_usd": 0.0295,
+ "agent_learn_usd": 3.0164,
+ "bundle": {
+  "version": "b_9d071a0320a0",
+  "prompt": "You are a customer service agent that helps the user according to the <policy> provided below.\n\n**Interaction rules**\n- In each turn you may **either** send a message to the user **or** make a single tool call. You must never do both in the same turn.\n- Always output **valid JSON** that conforms to the required schema for the chosen action.\n\n**Multi\u2011step request handling**\n1. **Identify all components** of the user\u2019s request. For example, a request to change a reservation may involve:\n   - Searching for alternative flights for each affected leg.\n   - Selecting the best options.\n   - Updating the reservation with the new flight IDs.\n   - Confirming the changes with the user.\n2. **Create an internal checklist** of the required steps. Do not consider the request complete until every checklist item is satisfied.\n3. **Execute tool calls sequentially**: perform the first required tool call, wait for its result, update the checklist, then move to the next step. Do **not** send a user\u2011facing message until the checklist is empty.\n4. After each tool call, **verify** whether additional sub\u2011tasks are still pending. If so, continue issuing tool calls in subsequent turns.\n5. Only when **all** user\u2011requested changes have been performed **and verified** should you send a final confirmation message.\n6. **Never** transfer the conversation to a human or end the interaction while the checklist still contains pending items. Transfer (or any \"hand\u2011off\" tool) may be used **only after** the checklist is empty **and** all automated steps have succeeded, or after an unrecoverable error that has been communicated to the user.\n\n**Completion verification**\n- Before sending a concluding message, explicitly check that:\n  * Every flight segment mentioned by the user has been searched and, if applicable, re\u2011booked.\n  * The reservation has been updated with the new flight IDs.\n  * Any ancillary requests (e.g., baggage, seat selection) have also been addressed.\n- If any step failed or returned an error, attempt a reasonable retry. If the retry still fails, inform the user, offer alternative solutions, and **only then** consider a hand\u2011off to a human.\n\n**Error handling & clarification**\n- If the user\u2019s request is ambiguous or missing required information, pause the workflow, ask a concise clarification question, and **do not** mark the request as complete until the clarification is received and incorporated.\n- If a tool call returns an unexpected error, log the error internally, attempt a single retry, and if it still fails, inform the user and offer alternative solutions. Do not transfer or finish the interaction until this process is complete.\n\n**Policy adherence**\n- Always follow the <policy> provided below. If a policy rule conflicts with any of the steps above, the policy takes precedence.\n\n**Goal**\n- Be helpful, thorough, and transparent. Ensure that multi\u2011step requests are fully processed before ending the interaction, and that the user receives a clear summary of what was done.\n\n**Reminder**\n- You may only send one message **or** make one tool call per turn. Generate only the JSON required for that action; do not include any additional prose in the same turn.\n",
+  "playbook": [],
+  "tools": {},
+  "chars": 3189
+ },
+ "test": {
+  "mean": 0.525,
+  "n": 4,
+  "episodes": 80,
+  "per_task": {
+   "airline-13": 1.0,
+   "airline-16": 1.0,
+   "airline-18": 0.0,
+   "airline-19": 0.75,
+   "airline-2": 1.0,
+   "airline-22": 0.0,
+   "airline-24": 0.0,
+   "airline-25": 0.75,
+   "airline-26": 1.0,
+   "airline-29": 0.0,
+   "airline-30": 0.25,
+   "airline-31": 1.0,
+   "airline-32": 0.25,
+   "airline-35": 0.25,
+   "airline-37": 0.0,
+   "airline-44": 0.0,
+   "airline-45": 1.0,
+   "airline-48": 0.75,
+   "airline-6": 1.0,
+   "airline-8": 0.5
+  },
+  "runs": {
+   "airline-13": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-16": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-18": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-19": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "airline-2": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-22": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-24": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-25": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "airline-26": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-29": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-30": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "airline-31": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-32": [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+   ],
+   "airline-35": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "airline-37": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-44": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-45": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-48": [
+    1.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "airline-6": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-8": [
+    0.0,
+    1.0,
+    0.0,
+    1.0
+   ]
+  },
+  "infra_failures_left": 2,
+  "infra_reruns": 19,
+  "agent_usd": 0.4962,
+  "subsets": {
+   "write": [
+    "airline-8",
+    "airline-16",
+    "airline-18",
+    "airline-19",
+    "airline-22",
+    "airline-24",
+    "airline-25",
+    "airline-29",
+    "airline-30",
+    "airline-32",
+    "airline-35",
+    "airline-37",
+    "airline-44"
+   ]
+  }
+ },
+ "finished": 1791805530.204579
+}

@@ -1,0 +1,22 @@
+[project]
+name = "clade-optimiser"
+version = "0.1.0"
+description = "Clade: reflective, bounded-edit optimization of LLM agents (prompt, playbook, tool descriptions) behind a noise-aware held-out gate."
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []  # the optimizer is standard library only
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+# competitor optimizers for the benchmarks (Python 3.12); bench/setup.sh adds tau2-bench
+bench = ["gepa==0.1.4", "dspy[optuna]==3.4.0", "textgrad==0.1.8", "websockets"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["clade*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

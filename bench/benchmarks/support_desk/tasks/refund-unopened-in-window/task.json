@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: maya.chen@example.com\nSubject: Return\n\nHi, I'd like to return the trail running shoes from order O1001, they're still in the box. Thanks!",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

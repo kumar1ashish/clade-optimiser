@@ -1,0 +1,368 @@
+% references.bib
+% Every entry below was checked on 2026-10-13 against a primary source
+% (arXiv abstract page, OpenReview, ACL Anthology, PMLR, NeurIPS proceedings,
+% AAAI OJS, nature.com, JSTOR scan, library catalogue, GitHub release notes).
+% Entries that could not be fully confirmed carry a "% UNVERIFIED:" line.
+
+% ---------------------------------------------------------------------------
+% Prompt / program optimisation
+% ---------------------------------------------------------------------------
+
+@inproceedings{gepa,
+  title         = {{GEPA}: Reflective Prompt Evolution Can Outperform Reinforcement Learning},
+  author        = {Agrawal, Lakshya A. and Tan, Shangyin and Soylu, Dilara and Ziems, Noah and Khare, Rishi and Opsahl-Ong, Krista and Singhvi, Arnav and Shandilya, Herumb and Ryan, Michael J. and Jiang, Meng and Potts, Christopher and Sen, Koushik and Dimakis, Alexandros G. and Stoica, Ion and Klein, Dan and Zaharia, Matei and Khattab, Omar},
+  booktitle     = {The Fourteenth International Conference on Learning Representations ({ICLR} 2026)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=RQm2KQTM5r},
+  eprint        = {2507.19457},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{ace,
+  title         = {Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models},
+  author        = {Zhang, Qizheng and Hu, Changran and Upasani, Shubhangi and Ma, Boyuan and Hong, Fenglu and Kamanuru, Vamsidhar and Rainton, Jay and Wu, Chen and Ji, Mengmeng and Li, Hanchen and Thakker, Urmish and Zou, James and Olukotun, Kunle},
+  booktitle     = {The Fourteenth International Conference on Learning Representations ({ICLR} 2026)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=eC4ygDs02R},
+  eprint        = {2510.04618},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{mipro,
+  title         = {Optimizing Instructions and Demonstrations for Multi-Stage Language Model Programs},
+  author        = {Opsahl-Ong, Krista and Ryan, Michael J. and Purtell, Josh and Broman, David and Potts, Christopher and Zaharia, Matei and Khattab, Omar},
+  editor        = {Al-Onaizan, Yaser and Bansal, Mohit and Chen, Yun-Nung},
+  booktitle     = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing ({EMNLP} 2024)},
+  pages         = {9340--9366},
+  month         = nov,
+  year          = {2024},
+  address       = {Miami, Florida, USA},
+  publisher     = {Association for Computational Linguistics},
+  doi           = {10.18653/v1/2024.emnlp-main.525},
+  url           = {https://aclanthology.org/2024.emnlp-main.525/},
+  eprint        = {2406.11695},
+  archivePrefix = {arXiv}
+}
+
+% Note: the ICLR 2024 camera-ready title (OpenReview, ICLR proceedings) is
+% "...into State-of-the-Art Pipelines"; the arXiv preprint 2310.03714 is titled
+% "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines".
+@inproceedings{dspy,
+  title         = {{DSPy}: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines},
+  author        = {Khattab, Omar and Singhvi, Arnav and Maheshwari, Paridhi and Zhang, Zhiyuan and Santhanam, Keshav and Vardhamanan, Sri and Haq, Saiful and Sharma, Ashutosh and Joshi, Thomas T. and Moazam, Hanna and Miller, Heather and Zaharia, Matei and Potts, Christopher},
+  booktitle     = {The Twelfth International Conference on Learning Representations ({ICLR} 2024)},
+  year          = {2024},
+  url           = {https://openreview.net/forum?id=sY5N0zY5Od},
+  eprint        = {2310.03714},
+  archivePrefix = {arXiv}
+}
+
+% Nature version of TextGrad (preprint: arXiv:2406.07496, "TextGrad: Automatic
+% 'Differentiation' via Text", which lacks the author Pan Lu).
+@article{textgrad,
+  title         = {Optimizing Generative {AI} by Backpropagating Language Model Feedback},
+  author        = {Yuksekgonul, Mert and Bianchi, Federico and Boen, Joseph and Liu, Sheng and Lu, Pan and Huang, Zhi and Guestrin, Carlos and Zou, James},
+  journal       = {Nature},
+  volume        = {639},
+  number        = {8055},
+  pages         = {609--616},
+  year          = {2025},
+  doi           = {10.1038/s41586-025-08661-4},
+  url           = {https://www.nature.com/articles/s41586-025-08661-4}
+}
+
+@inproceedings{trace,
+  title         = {Trace is the Next {AutoDiff}: Generative Optimization with Rich Feedback, Execution Traces, and {LLMs}},
+  author        = {Cheng, Ching-An and Nie, Allen and Swaminathan, Adith},
+  editor        = {Globerson, A. and Mackey, L. and Belgrave, D. and Fan, A. and Paquet, U. and Tomczak, J. and Zhang, C.},
+  booktitle     = {Advances in Neural Information Processing Systems 37 ({NeurIPS} 2024)},
+  volume        = {37},
+  pages         = {71596--71642},
+  year          = {2024},
+  publisher     = {Curran Associates, Inc.},
+  doi           = {10.52202/079017-2287},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/83ba7056bce2c3c3c27e17397cf3e1f0-Abstract-Conference.html},
+  eprint        = {2406.16218},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{opro,
+  title         = {Large Language Models as Optimizers},
+  author        = {Yang, Chengrun and Wang, Xuezhi and Lu, Yifeng and Liu, Hanxiao and Le, Quoc V. and Zhou, Denny and Chen, Xinyun},
+  booktitle     = {The Twelfth International Conference on Learning Representations ({ICLR} 2024)},
+  year          = {2024},
+  url           = {https://openreview.net/forum?id=Bb4VGOWELI},
+  eprint        = {2309.03409},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{ape,
+  title         = {Large Language Models are Human-Level Prompt Engineers},
+  author        = {Zhou, Yongchao and Muresanu, Andrei Ioan and Han, Ziwen and Paster, Keiran and Pitis, Silviu and Chan, Harris and Ba, Jimmy},
+  booktitle     = {The Eleventh International Conference on Learning Representations ({ICLR} 2023)},
+  year          = {2023},
+  url           = {https://openreview.net/forum?id=92gvk82DE-},
+  eprint        = {2211.01910},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{promptbreeder,
+  title         = {{Promptbreeder}: Self-Referential Self-Improvement via Prompt Evolution},
+  author        = {Fernando, Chrisantha and Banarse, Dylan Sunil and Michalewski, Henryk and Osindero, Simon and Rockt{\"a}schel, Tim},
+  booktitle     = {Proceedings of the 41st International Conference on Machine Learning ({ICML} 2024)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {235},
+  pages         = {13481--13544},
+  year          = {2024},
+  publisher     = {PMLR},
+  url           = {https://proceedings.mlr.press/v235/fernando24a.html},
+  eprint        = {2309.16797},
+  archivePrefix = {arXiv}
+}
+
+% SIMBA has no paper. It was released as an experimental optimizer in DSPy
+% v2.6.15 (2025-03-24; GitHub PR #8002, "Experimental dspy.SIMBA optimizer and
+% Tool-Use Tutorial").
+@misc{simba,
+  title         = {{SIMBA} ({Stochastic Introspective Mini-Batch Ascent}) Optimizer, {DSPy} v2.6.15},
+  author        = {{DSPy}},
+  year          = {2025},
+  howpublished  = {Software. \url{https://dspy.ai/api/optimizers/SIMBA/}},
+  note          = {Released in DSPy v2.6.15, March 2025. Source code: \url{https://github.com/stanfordnlp/dspy}},
+  url           = {https://dspy.ai/api/optimizers/SIMBA/}
+}
+
+@article{textreg,
+  title         = {{TextReg}: Mitigating Prompt Distributional Overfitting via Regularized Text-Space Optimization},
+  author        = {Fu, Lucheng and Yu, Ye and Wang, Yiyang and Jin, Yiqiao and Jin, Haibo and Prakash, B. Aditya and Wang, Haohan},
+  journal       = {arXiv preprint arXiv:2605.21318},
+  year          = {2026},
+  url           = {https://arxiv.org/abs/2605.21318},
+  eprint        = {2605.21318},
+  archivePrefix = {arXiv}
+}
+
+% arXiv comments: "Accepted to EMNLP 2026". Proceedings not yet in the ACL
+% Anthology as of 2026-10-13; switch to an inproceedings entry once they are.
+@article{beyondprompts,
+  title         = {Beyond Prompts: Measuring and Optimizing {LLM} Tool-Agent Harnesses},
+  author        = {Zhao, Cen Mia and Ruan, Haibo and Chen, Wenjie and Tu, Pei-fen and Abbasi, Usman and Hesch, Joel},
+  journal       = {arXiv preprint arXiv:2609.05736},
+  year          = {2026},
+  note          = {Accepted to EMNLP 2026},
+  url           = {https://arxiv.org/abs/2609.05736},
+  eprint        = {2609.05736},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{metaharness,
+  title         = {{Meta-Harness}: End-to-End Optimization of Model Harnesses},
+  author        = {Lee, Yoonho and Nair, Roshen and Zhang, Qizheng and Lee, Kangwook and Khattab, Omar and Finn, Chelsea},
+  booktitle     = {Third Conference on Language Modeling ({COLM} 2026)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=tmbOUyFx3R},
+  eprint        = {2603.28052},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Agent benchmarks and evaluation
+% ---------------------------------------------------------------------------
+
+@inproceedings{taubench,
+  title         = {{$\tau$}-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains},
+  author        = {Yao, Shunyu and Shinn, Noah and Razavi, Pedram and Narasimhan, Karthik},
+  booktitle     = {The Thirteenth International Conference on Learning Representations ({ICLR} 2025)},
+  year          = {2025},
+  url           = {https://openreview.net/forum?id=roNSXZpUDN},
+  eprint        = {2406.12045},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{tau2bench,
+  title         = {{$\tau^2$}-Bench: Evaluating Conversational Agents in a Dual-Control Environment},
+  author        = {Barres, Victor and Dong, Honghua and Ray, Soham and Si, Xujie and Narasimhan, Karthik},
+  booktitle     = {Proceedings of the 43rd International Conference on Machine Learning ({ICML} 2026)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {306},
+  pages         = {6736--6782},
+  year          = {2026},
+  publisher     = {PMLR},
+  url           = {https://proceedings.mlr.press/v306/barres26a.html},
+  eprint        = {2506.07982},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{appworld,
+  title         = {{AppWorld}: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents},
+  author        = {Trivedi, Harsh and Khot, Tushar and Hartmann, Mareike and Manku, Ruskin and Dong, Vinty and Li, Edward and Gupta, Shashank and Sabharwal, Ashish and Balasubramanian, Niranjan},
+  editor        = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  booktitle     = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) ({ACL} 2024)},
+  pages         = {16022--16076},
+  month         = aug,
+  year          = {2024},
+  address       = {Bangkok, Thailand},
+  publisher     = {Association for Computational Linguistics},
+  doi           = {10.18653/v1/2024.acl-long.850},
+  url           = {https://aclanthology.org/2024.acl-long.850/},
+  eprint        = {2407.18901},
+  archivePrefix = {arXiv}
+}
+
+@article{agentsthatmatter,
+  title         = {{AI} Agents That Matter},
+  author        = {Kapoor, Sayash and Stroebl, Benedikt and Siegel, Zachary S. and Nadgir, Nitya and Narayanan, Arvind},
+  journal       = {Transactions on Machine Learning Research},
+  issn          = {2835-8856},
+  year          = {2025},
+  url           = {https://openreview.net/forum?id=Zy4uFzMviZ},
+  eprint        = {2407.01502},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Self-improving agents and agent memory
+% ---------------------------------------------------------------------------
+
+% The NeurIPS 2023 proceedings list five authors; the arXiv version
+% (2303.11366) additionally lists Edward Berman.
+@inproceedings{reflexion,
+  title         = {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  author        = {Shinn, Noah and Cassano, Federico and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  editor        = {Oh, A. and Naumann, T. and Globerson, A. and Saenko, K. and Hardt, M. and Levine, S.},
+  booktitle     = {Advances in Neural Information Processing Systems 36 ({NeurIPS} 2023)},
+  volume        = {36},
+  pages         = {8634--8652},
+  year          = {2023},
+  publisher     = {Curran Associates, Inc.},
+  doi           = {10.52202/075280-0377},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html},
+  eprint        = {2303.11366},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{expel,
+  title         = {{ExpeL}: {LLM} Agents Are Experiential Learners},
+  author        = {Zhao, Andrew and Huang, Daniel and Xu, Quentin and Lin, Matthieu and Liu, Yong-Jin and Huang, Gao},
+  booktitle     = {Proceedings of the 38th {AAAI} Conference on Artificial Intelligence ({AAAI} 2024)},
+  volume        = {38},
+  pages         = {19632--19642},
+  year          = {2024},
+  publisher     = {AAAI Press},
+  doi           = {10.1609/aaai.v38i17.29936},
+  url           = {https://ojs.aaai.org/index.php/AAAI/article/view/29936},
+  eprint        = {2308.10144},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{dynamiccheatsheet,
+  title         = {{Dynamic Cheatsheet}: Test-Time Learning with Adaptive Memory},
+  author        = {Suzgun, Mirac and Yuksekgonul, Mert and Bianchi, Federico and Jurafsky, Dan and Zou, James},
+  editor        = {Demberg, Vera and Inui, Kentaro and Marquez, Llu{\'i}s},
+  booktitle     = {Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers) ({EACL} 2026)},
+  pages         = {7080--7106},
+  month         = mar,
+  year          = {2026},
+  address       = {Rabat, Morocco},
+  publisher     = {Association for Computational Linguistics},
+  doi           = {10.18653/v1/2026.eacl-long.333},
+  url           = {https://aclanthology.org/2026.eacl-long.333/},
+  eprint        = {2504.07952},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{dgm,
+  title         = {{Darwin G{\"o}del Machine}: Open-Ended Evolution of Self-Improving Agents},
+  author        = {Zhang, Jenny and Hu, Shengran and Lu, Cong and Lange, Robert Tjarko and Clune, Jeff},
+  booktitle     = {The Fourteenth International Conference on Learning Representations ({ICLR} 2026)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=pUpzQZTvGY},
+  eprint        = {2505.22954},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{hgm,
+  title         = {{Huxley-G{\"o}del Machine}: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine},
+  author        = {Wang, Wenyi and Pi{\k{e}}kos, Piotr and Nanbo, Li and Laakom, Firas and Chen, Yimeng and Ostaszewski, Mateusz and Zhuge, Mingchen and Schmidhuber, J{\"u}rgen},
+  booktitle     = {The Fourteenth International Conference on Learning Representations ({ICLR} 2026)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=T0EiEuhOOL},
+  eprint        = {2510.21614},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{reasoningbank,
+  title         = {{ReasoningBank}: Scaling Agent Self-Evolving with Reasoning Memory},
+  author        = {Ouyang, Siru and Yan, Jun and Hsu, I-Hung and Chen, Yanfei and Jiang, Ke and Wang, Zifeng and Han, Rujun and Le, Long T. and Daruki, Samira and Tang, Xiangru and Tirumalashetty, Vishy and Lee, George and Rofouei, Mahsan and Lin, Hangfei and Han, Jiawei and Lee, Chen-Yu and Pfister, Tomas},
+  booktitle     = {The Fourteenth International Conference on Learning Representations ({ICLR} 2026)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=jL7fwchScm},
+  eprint        = {2509.25140},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{awm,
+  title         = {Agent Workflow Memory},
+  author        = {Wang, Zora Zhiruo and Mao, Jiayuan and Fried, Daniel and Neubig, Graham},
+  booktitle     = {Proceedings of the 42nd International Conference on Machine Learning ({ICML} 2025)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {267},
+  pages         = {63897--63911},
+  year          = {2025},
+  publisher     = {PMLR},
+  url           = {https://proceedings.mlr.press/v267/wang25bx.html},
+  eprint        = {2409.07429},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Models
+% ---------------------------------------------------------------------------
+
+% arXiv lists "OpenAI" followed by 120+ named contributors; cited here under
+% the corporate author.
+@article{gptoss,
+  title         = {{gpt-oss-120b} \& {gpt-oss-20b} Model Card},
+  author        = {{OpenAI}},
+  journal       = {arXiv preprint arXiv:2508.10925},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2508.10925},
+  eprint        = {2508.10925},
+  archivePrefix = {arXiv}
+}
+
+@article{qwen3,
+  title         = {{Qwen3} Technical Report},
+  author        = {Yang, An and Li, Anfeng and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Gao, Chang and Huang, Chengen and Lv, Chenxu and Zheng, Chujie and Liu, Dayiheng and Zhou, Fan and Huang, Fei and Hu, Feng and others},
+  journal       = {arXiv preprint arXiv:2505.09388},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2505.09388},
+  eprint        = {2505.09388},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Statistics
+% ---------------------------------------------------------------------------
+
+@article{holm,
+  title         = {A Simple Sequentially Rejective Multiple Test Procedure},
+  author        = {Holm, Sture},
+  journal       = {Scandinavian Journal of Statistics},
+  volume        = {6},
+  number        = {2},
+  pages         = {65--70},
+  year          = {1979},
+  url           = {https://www.jstor.org/stable/4615733}
+}
+
+@book{efron,
+  title         = {An Introduction to the Bootstrap},
+  author        = {Efron, Bradley and Tibshirani, Robert J.},
+  series        = {Monographs on Statistics and Applied Probability},
+  number        = {57},
+  publisher     = {Chapman \& Hall},
+  address       = {New York},
+  year          = {1993},
+  isbn          = {0-412-04231-2}
+}

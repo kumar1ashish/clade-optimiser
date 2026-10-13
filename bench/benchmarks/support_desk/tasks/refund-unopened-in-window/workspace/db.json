@@ -1,0 +1,29 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C100": {
+   "name": "Maya Chen",
+   "email": "maya.chen@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O1001": {
+   "customer_id": "C100",
+   "status": "delivered",
+   "delivered_date": "2026-10-01",
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Trail running shoes",
+     "price": 80.0,
+     "opened": false,
+     "damaged": false,
+     "final_sale": false,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

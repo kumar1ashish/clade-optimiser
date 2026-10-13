@@ -1,0 +1,34 @@
+{
+ "today": "2026-10-11",
+ "customers": {
+  "C100": {
+   "name": "Maya Chen",
+   "email": "maya.chen@example.com",
+   "store_credit": 0
+  },
+  "C200": {
+   "name": "Leo Garcia",
+   "email": "leo.garcia@example.com",
+   "store_credit": 0
+  }
+ },
+ "orders": {
+  "O1011": {
+   "customer_id": "C100",
+   "status": "delivered",
+   "delivered_date": "2026-10-07",
+   "shipping_address": "12 Elm Street, Portland, OR 97201",
+   "items": [
+    {
+     "id": "I1",
+     "name": "Compass",
+     "price": 30.0,
+     "opened": false,
+     "damaged": false,
+     "final_sale": false,
+     "refunded": false
+    }
+   ]
+  }
+ }
+}

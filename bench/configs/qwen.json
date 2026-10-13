@@ -1,0 +1,26 @@
+{
+  "benchmarks": [
+    "tau2-airline",
+    "tau2-retail"
+  ],
+  "methods": [
+    "baseline",
+    "clade",
+    "gepa",
+    "gepa-tools",
+    "mipro",
+    "ace"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "budget": 600,
+  "models": {
+    "agent": "groq:qwen/qwen3.6-27b",
+    "optimizer": "groq:openai/gpt-oss-120b",
+    "user": "groq:openai/gpt-oss-120b"
+  },
+  "service_tier": "flex"
+}

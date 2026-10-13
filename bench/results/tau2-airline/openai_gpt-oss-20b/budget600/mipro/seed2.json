@@ -1,0 +1,204 @@
+{
+ "bench": "tau2-airline",
+ "method": "mipro",
+ "seed": 2,
+ "models": {
+  "agent": "groq:openai/gpt-oss-20b",
+  "optimizer": "groq:openai/gpt-oss-120b",
+  "user": "groq:openai/gpt-oss-120b"
+ },
+ "budget": 600,
+ "test_n": 4,
+ "params": {},
+ "started": 1791802637.8739069,
+ "status": "done",
+ "learn_seconds": 9866,
+ "rollouts": 600,
+ "infra_reruns": 128,
+ "optimizer_tokens": {
+  "openai/gpt-oss-120b": {
+   "prompt_tokens": 28356,
+   "completion_tokens": 14060,
+   "calls": 15
+  }
+ },
+ "optimizer_usd": 0.0127,
+ "agent_learn_usd": 3.0596,
+ "bundle": {
+  "version": "b_7feb345f26f5",
+  "prompt": "You are a customer service agent that helps the user according to the <policy> provided below.\nIn each turn you can either:\n- Send a message to the user.\n- Make a tool call.\nYou cannot do both at the same time.\n\nTry to be helpful and always follow the policy. Always make sure you generate valid JSON only.",
+  "playbook": [],
+  "tools": {},
+  "chars": 306
+ },
+ "test": {
+  "mean": 0.4875,
+  "n": 4,
+  "episodes": 80,
+  "per_task": {
+   "airline-13": 1.0,
+   "airline-16": 0.75,
+   "airline-18": 0.0,
+   "airline-19": 0.5,
+   "airline-2": 1.0,
+   "airline-22": 0.25,
+   "airline-24": 0.0,
+   "airline-25": 0.75,
+   "airline-26": 1.0,
+   "airline-29": 0.0,
+   "airline-30": 0.5,
+   "airline-31": 1.0,
+   "airline-32": 0.0,
+   "airline-35": 0.0,
+   "airline-37": 0.25,
+   "airline-44": 0.0,
+   "airline-45": 1.0,
+   "airline-48": 0.0,
+   "airline-6": 1.0,
+   "airline-8": 0.75
+  },
+  "runs": {
+   "airline-13": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-16": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "airline-18": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-19": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "airline-2": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-22": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "airline-24": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-25": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "airline-26": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-29": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-30": [
+    0.0,
+    1.0,
+    0.0,
+    1.0
+   ],
+   "airline-31": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-32": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-35": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-37": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "airline-44": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-45": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-48": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "airline-6": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "airline-8": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ]
+  },
+  "infra_failures_left": 0,
+  "infra_reruns": 18,
+  "agent_usd": 0.4656,
+  "subsets": {
+   "write": [
+    "airline-8",
+    "airline-16",
+    "airline-18",
+    "airline-19",
+    "airline-22",
+    "airline-24",
+    "airline-25",
+    "airline-29",
+    "airline-30",
+    "airline-32",
+    "airline-35",
+    "airline-37",
+    "airline-44"
+   ]
+  }
+ },
+ "finished": 1791814156.7541819
+}

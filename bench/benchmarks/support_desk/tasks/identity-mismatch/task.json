@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: m.chen.personal@example.com\nSubject: Refund\n\nThis is Maya, writing from my other email. Please refund the unopened gaiters in O1010.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": false,
+  "meta": {
+    "split": "test"
+  }
+}

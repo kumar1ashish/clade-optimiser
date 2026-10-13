@@ -1,0 +1,12 @@
+{
+  "family": "support",
+  "prompt": "From: leo.garcia@example.com\nSubject: Damaged\n\nThe tent stakes in O3003 arrived bent, I opened the bag before I saw. Refund please.",
+  "judge": {
+    "type": "shell",
+    "cmd": "python -m pytest -q tests_hidden"
+  },
+  "held_out": true,
+  "meta": {
+    "split": "held"
+  }
+}
