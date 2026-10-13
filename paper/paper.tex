@@ -22,6 +22,7 @@
 \usepackage{algpseudocode}
 \usepackage{xspace}
 \usepackage{float}
+\usepackage{needspace}
 
 \input{generated/numbers.tex}
 \newcommand{\clade}{\textsc{Clade}\xspace}
@@ -83,9 +84,10 @@ its shipped agent scored on the same frozen test split, with three seeds and a p
 above: it proposes one bounded change at a time, screens proposed fixes before spending episodes on them, and
 promotes a change only through a held-out gate that tolerates run-to-run noise but no larger per-task drop.
 
+\needspace{4\baselineskip}
 Our findings (\S\ref{sec:results}):
 \begin{itemize}
-\setlength\itemsep{0pt}
+\setlength\itemsep{0pt}\setlength\parsep{2pt}
 \item On \taub airline and retail with a gpt-oss-20b agent, no optimizer reliably improves the agent within 600
 rollouts. The unchanged agent's test score varies by up to 0.16 between scorings, more than most reported gains.
 \item The competitors frequently ship a worse agent. Across 9 runs each, the shipped agent
